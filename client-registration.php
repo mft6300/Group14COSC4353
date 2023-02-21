@@ -210,24 +210,24 @@
     <div class="testbox">
       <form action="/">
         <div class="banner">
-          <h1>New Member Registration</h1>
+          <h1>New User Registration</h1>
         </div>
         <div class="colums">
           <div class="item">
             <label for="fname"> First Name<span>*</span></label>
-            <input id="fname" type="text" name="fname" required/>
+            <input id="fname" type="text" name="fname" maxlength="50" required/>
           </div>
           <div class="item">
             <label for="lname"> Last Name<span>*</span></label>
-            <input id="lname" type="text" name="lname" required/>
+            <input id="lname" type="text" name="lname" maxlength="50" required/>
           </div>
           <div class="item">
             <label for="address1">Address 1<span>*</span></label>
-            <input id="address1" type="text"   name="address1" required/>
+            <input id="address1" type="text"   name="address1" maxlength="100" required/>
           </div>
           <div class="item">
             <label for="address2">Address 2</label>
-            <input id="address2" type="text"   name="address2" required/>
+            <input id="address2" type="text"   name="address2" maxlength="100" />
           </div>
           <div class="item">
             <label for="city">City<span>*</span></label>
@@ -296,7 +296,7 @@
             </div>
           <div class="item">
             <label for="zip">Zip/Postal Code<span>*</span></label>
-            <input id="zip" type="text" name="zip" required/>
+            <input id="zip" type="text" name="zip" minlength="5" maxlength="9" required/>
           </div>
         </div>
         <div class="btn-block">
