@@ -180,6 +180,16 @@
       display:flex;
       justify-content:space-around;
       }
+      a {
+        color: #669999;
+      }
+      a:hover {
+        color: #334d4d; 
+      }
+      .cancel-link {
+        margin-top: 5px;
+        text-align:center;
+      }
       .btn-block {
       margin-top: 10px;
       text-align: center;
@@ -223,32 +233,32 @@
         </div>
         <div class="colums">
           <div class="item">
-            <label for="fname"> First Name<span>*</span></label>
-            <input id="fname" type="text" name="fname" maxlength="50" required/>
+            <label for="fname"> First Name</label>
+            <input id="fname" type="text" name="fname" maxlength="50"/>
           </div>
           <div class="item">
-            <label for="lname"> Last Name<span>*</span></label>
-            <input id="lname" type="text" name="lname" maxlength="50" required/>
+            <label for="lname"> Last Name</label>
+            <input id="lname" type="text" name="lname" maxlength="50" />
           </div>
           <div class="item">
-            <label for="address1">Address 1<span>*</span></label>
-            <input id="address1" type="text"   name="address1" maxlength="100" required/>
+            <label for="address1">Address 1</label>
+            <input id="address1" type="text"   name="address1" maxlength="100" />
           </div>
           <div class="item">
             <label for="address2">Address 2</label>
             <input id="address2" type="text"   name="address2" maxlength="100" />
           </div>
           <div class="item">
-            <label for="city">City<span>*</span></label>
-            <input id="city" type="text"   name="city" required/>
+            <label for="city">City</label>
+            <input id="city" type="text"   name="city" />
           </div>
           <!-- <div class="item">
             <label for="state">State<span>*</span></label>
             <input id="state" type="text"   name="state" required/>
           </div> -->
             <div class="item">
-                <label for="state">State<span>*</span></label>
-                <select name="state" id="state" required>
+                <label for="state">State</label>
+                <select name="state" id="state">
                     <option value=""></option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -304,12 +314,31 @@
                 </select>
             </div>
           <div class="item">
-            <label for="zip">Zip/Postal Code<span>*</span></label>
-            <input id="zip" type="text" name="zip" minlength="5" maxlength="9" required/>
+            <label for="zip">Zip/Postal Code</label>
+            <input id="zip" type="text" name="zip" minlength="5" maxlength="9"/>
+          </div>
+          <div class="item">
+          </div>
+          <div class="item">
+            <label for="username"> Change Username</label>
+            <input id="username" type="text" name="username" minlength="6" maxlength="50"/>
+          </div>
+          <div class="item">
+          </div>
+          <div class="item">
+            <label for="password">Change Password</label>
+            <input id="password" type="text" name="password" minlength="6" maxlength="50"/>
+          </div>
+          <div class="item">
+            <label for="password">Confirm Password</label>
+            <input id="password" type="text" name="password" minlength="6" maxlength="50"/>
           </div>
         </div>
         <div class="btn-block">
           <button type="submit" href="/">Save Changes</button>
+        </div>
+        <div class="cancel-link">
+          <a href="/">Cancel</a>
         </div>
       </form>
     </div>
