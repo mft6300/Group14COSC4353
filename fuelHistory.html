@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client Fuel Quotes</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<style>
+		table {
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+    
+	<div class="container">
+		<h1>Client Fuel Quotes</h1>
+        <div class="container border">
+			<button onclick="toggleFilter()" class="btn btn-primary">Filter Table</button>
+			<button onclick="resetFilter()" class="btn btn-warning">Reset Filter</button>
+			<div id="filter" class="filter container border" style="display: none;">
+				<label for="start-date">Start Date:</label>
+				<input type="date" id="start-date" name="start-date"><br><br>
+				<label for="end-date">End Date:</label>
+				<input type="date" id="end-date" name="end-date"><br><br>
+				<button onclick="filterTable()" class="btn btn-light">Apply Filter</button>
+			</div>
+			<table id="table" class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>Request Date</th>
+						<th>Gallons Requested</th>
+						<th>Delivery Address</th>
+						<th>Delivery Date</th>
+						<th>Price Per Gallon</th>
+						<th>Total Amount Due</th>
+					</tr>
+				</thead>
+				<tbody">
+					<tr>
+						<td>01/01/2023</td>
+						<td>100</td>
+						<td>123 Main St, Anytown USA</td>
+						<td>05/10/2020</td>
+						<td>$2.50</td>
+						<td>$250.00</td>
+					</tr>
+					<tr>
+						<td>02/01/2023</td>
+						<td>200</td>
+						<td>456 Oak Ave, Anycity USA</td>
+						<td>06/15/2020</td>
+						<td>$2.30</td>
+						<td>$460.00</td>
+					</tr>
+					<tr>
+						<td>02/10/2023</td>
+						<td>150</td>
+						<td>789 Elm St, Anytown USA</td>
+						<td>07/20/2020</td>
+						<td>$2.40</td>
+						<td>$360.00</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+    <script>
+		function toggleFilter() {
+			var filter = document.getElementById("filter");
+			if (filter.style.display === "none") {
+				filter.style.display = "block";
+			} else {
+				filter.style.display = "none";
+			}
+		}
+
+        function filterTable() {
+			var filter = document.getElementById("filter");
+            var startDate = Date.parse(document.getElementById("start-date").value);
+            var endDate = Date.parse(document.getElementById("end-date").value);
+            var table = document.getElementById("table");
+            var rows = table.getElementsByTagName("tr");
+
+            for (var i = 1; i < rows.length; i++) {
+                var orderDate = Date.parse(rows[i].getElementsByTagName("td")[0].innerHTML);
+                if (orderDate) {
+                    if (orderDate < startDate || orderDate > endDate) {
+                        rows[i].style.display = "none";
+                    } else {
+                        rows[i].style.display = "";
+                    }
+                }
+            }
+            filter.style.display = "none"
+        }
+
+        function resetFilter() {
+            var table = document.getElementById("table");
+            var rows = table.getElementsByTagName("tr");
+            for (var i = 0; i < rows.length; i++) {
+                rows[i].style.display = "";
+            }
+        }
+    </script>
+</body>
+</html>
