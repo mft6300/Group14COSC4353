@@ -226,3 +226,6 @@ p.headtitle {
 .hidden {
   display: none;
 }
+table {
+  margin-top: 50px;
+}

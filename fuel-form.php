@@ -1,6 +1,8 @@
 <?php
 include_once 'header.php';
+include_once 'navbar.php';
 ?>
+<<<<<<< Updated upstream
 <nav class="navbar navbar-expand-lg bg-light bg-body-primary">
 	<div class="container-fluid">
 		<a href="$" class="navbar-brand">Company Name</a>
@@ -12,10 +14,11 @@ include_once 'header.php';
 		</div>
 	</div>
 </nav>
+=======
+>>>>>>> Stashed changes
 <div class="container">
     <div class="text-center">
         <h2>Fuel Quote Form</h2>
-
     </div>
     <div class="row justify-content-center my-6">
         <div class="col-lg-6">
