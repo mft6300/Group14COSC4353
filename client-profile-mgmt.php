@@ -30,10 +30,6 @@ include_once 'navbar.php';
         <label for="city">City</label>
         <input id="city" type="text"   name="city" />
       </div>
-      <!-- <div class="item">
-        <label for="state">State<span>*</span></label>
-        <input id="state" type="text"   name="state" required/>
-      </div> -->
         <div class="item">
             <label for="state">State</label>
             <select name="state" id="state">
@@ -132,7 +128,7 @@ include_once 'navbar.php';
     }
   }
   if ($_REQUEST["status"] === 'success') {
-    echo '<script>alert("User Registered")</script>';
+    echo '<script>alert("Changes Saved")</script>';
   }
   ?>
 </div>

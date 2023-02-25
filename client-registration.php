@@ -30,10 +30,6 @@ include_once 'header.php';
           <label for="city">City<span>*</span></label>
           <input id="city" type="text" name="city" required />
         </div>
-        <!-- <div class="item">
-            <label for="state">State<span>*</span></label>
-            <input id="state" type="text"   name="state" required/>
-          </div> -->
         <div class="item">
           <label for="state">State<span>*</span></label>
           <select name="state" id="state" required>
