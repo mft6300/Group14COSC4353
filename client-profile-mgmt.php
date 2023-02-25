@@ -44,7 +44,7 @@ include_once 'navbar.php';
       }
       .banner {
       position: relative;
-      height: 300px;
+      height: 80px;
       background-image: url("/uploads/media/default/0001/02/c1504011491c4e04e5158b63a27a4ea654b03ed1.jpeg");  
       background-size: cover;
       display: flex;
