@@ -8,15 +8,15 @@ if (isset($_POST["submit"])) {
   require_once "functions.inc.php";
 
   if(emptyInputLogin($username, $password) !== false) {
-    header("location: ../login.php?error=emptyinput");
+    header("location: ../index.php?error=emptyinput");
     exit();
   }
   else if(loginUser($conn, $username, $password)) {
-    header("location: ../login.php?error=invaliduser");
+    header("location: ../index.php?error=invaliduser");
     exit();
   }
 }
 else {
-  header("location: ../login.php");
+  header("location: ../fuel-form.php");
   exit();
 }

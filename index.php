@@ -7,7 +7,7 @@ include_once 'header.php';
 <div>
   <div class='login-form'>
     <h2>Log In</h2>
-    <form action='/includes/login.inc.php' method='post'>
+    <form action='includes/login.inc.php' method='post'>
       <div class='form-element'>
         <label for='username'>Enter Username or Email</label>
         <input type='text' name='username' id='username' placeholder='Username or Email' required />

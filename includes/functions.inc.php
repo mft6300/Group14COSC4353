@@ -99,27 +99,27 @@ function emptyInputLogin($username, $password) {
 function loginUser($conn, $username, $password) {
   $userExists = usernameOrEmailExists($conn, $username, $username);
   if (!$userExists) {
-    header("location: ../login.php?error=wronglogin");
+    header("location: ../index.php?error=wronglogin");
     exit();
   }
   if ($username !== 'admin1') {
     $hashedPass = $userExists["user_pass"];
     $checkPassword = password_verify($password, $hashedPass);
     if (!$checkPassword) {
-      header("location: ../login.php?error=wronglogin");
+      header("location: ../index.php?error=wronglogin");
       exit();
     }
   }
   else {
     if(strcmp($password, $userExists["user_pass"]) !== 0) {
-      header("location: ../login.php?error=wronglogin");
+      header("location: ../index.php?error=wronglogin");
       exit();
     }
   }
   $_SESSION["userID"] = $userExists["user_ID"];
   $_SESSION["userRole"] = $userExists["user_role"];
   $_SESSION["username"] = $userExists["username"];
-  header("location: ../index.php");
+  header("location: ../fuel-form.php");
   exit();
 }
 
