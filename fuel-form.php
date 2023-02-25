@@ -1,29 +1,17 @@
 <?php
 include_once 'header.php';
 ?>
-<nav class="navbar navbar-expand-lg" style="background-color: gray">
-    <div class="container-fluid">
-        <h1 class="navbar-brand">Company name</h1>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile/Settings</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="fuelHistory.html">History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log Out</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-lg bg-light bg-body-primary">
+	<div class="container-fluid">
+		<a href="$" class="navbar-brand">Company Name</a>
+		<div>
+			<button class="btn btn-light">Get Quote</button>
+			<button class="btn btn-light">Quote History</button>
+			<button class="btn btn-light">Profile Management</button>
+			<button class="btn btn-outline-danger">Log Out</button>
+		</div>
+	</div>
 </nav>
-
 <div class="container">
     <div class="text-center">
         <h2>Fuel Quote Form</h2>
