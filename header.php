@@ -18,5 +18,3 @@ session_start();
 
 <body>
   <div class='centered-div'>
-    <header>
-    </header>

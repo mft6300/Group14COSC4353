@@ -2,6 +2,7 @@
 include_once 'header.php';
 include_once 'navbar.php';
 ?>
+</div>
 <div class="container d-flex justify-content-center align-items-center">
 	<div class="card" style="width: 25rem">
 		<div class="card-body">
@@ -52,6 +53,7 @@ include_once 'navbar.php';
 		</div>
 	</div>
 </div>
+<div>
 <?php
 include_once 'footer.php';
 ?>
