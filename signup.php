@@ -1,8 +1,12 @@
 <?php
 include_once 'header.php';
 ?>
-<div class='signup-form'>
-  <h2>Sign Up</h2>
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+	<div class="card" style="width: 25rem">
+		<div class="card-body">
+			<div class="d-flex justify-content-center">
+				<h5 class="card-title">Sign Up</h5>
+			</div>
   <form action='./includes/signup.inc.php' method='post'>
     <div class='form-element'>
       <label for='email'>Enter Email</label>
@@ -56,7 +60,6 @@ include_once 'header.php';
     }
   }
   ?>
-</div>
 
 
 <?php

@@ -1,9 +1,8 @@
 <?php
 include_once 'header.php';
-include_once 'navbar.php';
 ?>
 </div>
-<div class="container d-flex justify-content-center align-items-center">
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
 	<div class="card" style="width: 25rem">
 		<div class="card-body">
 			<div class="d-flex justify-content-center">
@@ -12,7 +11,7 @@ include_once 'navbar.php';
 			<form action='includes/login.inc.php' method='post'>
 			<form>
 				<div class="form-outline mb-4">
-					<input type="email" name="username" id="username" class="form-control" placeholder="Email address" required/>
+					<input type="text" name="username" id="username" class="form-control" placeholder="Email address" required/>
 				</div>
 				
 				<div class="form-outline mb-4">
@@ -33,7 +32,7 @@ include_once 'navbar.php';
 				</div>
 				
 				<div class="d-grid gap-2">
-					<button type="button" class="btn btn-primary mb-4">Sign in</button>
+					<button type="submit" class="btn btn-primary mb-4">Sign in</button>
 				</div>
 				<?php
 				if (isset($_GET["error"])) {
@@ -47,7 +46,7 @@ include_once 'navbar.php';
 				}
 				?>
 				<div class="text-center">
-					<p>Not a member? <a href="#!">Register</a></p>
+					<p>Not a member? <a href="signup.php">Register</a></p>
 				</div>
 			</form>
 		</div>
