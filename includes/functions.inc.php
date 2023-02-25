@@ -69,7 +69,7 @@ function createUser($conn, $email, $phonenum, $username, $password) {
   $sql = "INSERT INTO User_Account (username, user_pass, user_phone_num, user_email_address) VALUES (?, ?, ?, ?);";
   $stmt = mysqli_stmt_init($conn);
   if (!mysqli_stmt_prepare($stmt, $sql)) {
-    header("location: ../memp.php?error=stmtfailed");
+    header("location: ../signup.php?error=stmtfailed");
     exit();
   } 
   
@@ -83,7 +83,7 @@ function createUser($conn, $email, $phonenum, $username, $password) {
   $_SESSION["userRole"] = $userExists["user_role"];
   $_SESSION["username"] = $userExists["username"];
   $status = "success";
-  header("location: ../info.php?status=".$status);
+  header("location: ../client-profile-mgmt.php?status=".$status);
   exit();
 }
 /*****************LOGIN*****************/

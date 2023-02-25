@@ -333,6 +333,22 @@
           <a href="/">Cancel</a>
         </div>
       </form>
+    <?php
+      if (isset($_GET["error"])) {
+        if ($_GET["error"] === "emptyinput") {
+          echo "<p>Fill in all fields.</p>";
+        }
+        if ($_GET["error"] === "invalidssn") {
+          echo "<p>Enter a proper SSN.</p>";
+        }
+        if ($_GET["error"] === "invalidzip") {
+          echo "<p>Enter a proper zip code.</p>";
+        }
+      }
+      if ($_REQUEST["status"] === 'success') {
+        echo '<script>alert("User Registered")</script>';
+      }
+      ?>
     </div>
   </body>
 </html>
