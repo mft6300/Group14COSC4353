@@ -2,20 +2,6 @@
 include_once 'header.php';
 include_once 'navbar.php';
 ?>
-<<<<<<< Updated upstream
-<nav class="navbar navbar-expand-lg bg-light bg-body-primary">
-	<div class="container-fluid">
-		<a href="$" class="navbar-brand">Company Name</a>
-		<div>
-			<button class="btn btn-light">Get Quote</button>
-			<button class="btn btn-light">Quote History</button>
-			<button class="btn btn-light">Profile Management</button>
-			<button class="btn btn-outline-danger">Log Out</button>
-		</div>
-	</div>
-</nav>
-=======
->>>>>>> Stashed changes
 <div class="container">
     <div class="text-center">
         <h2>Fuel Quote Form</h2>
