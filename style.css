@@ -219,3 +219,10 @@ p.headtitle {
 .table-template tbody tr:last-of-type {
   border-bottom: 2px solid #267647;
 }
+
+.error-msg {
+  color: orange;
+}
+.hidden {
+  display: none;
+}
