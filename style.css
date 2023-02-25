@@ -223,3 +223,25 @@ p.headtitle {
 table {
   margin-top: 50px;
 }
+
+.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+  color:  #669999;
+}
+.item input:hover, .item select:hover, .item textarea:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 3px 0  #669999;
+  color: #669999;
+}
+.item {
+  position: relative;
+  margin: 10px 0;
+}
+
+.btn-block {
+  margin-top: 10px;
+  text-align: center;
+}
+.cancel-link {
+  margin-top:5px;
+  text-align:center;
+}
