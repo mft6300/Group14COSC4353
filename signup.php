@@ -3,7 +3,7 @@ include_once 'header.php';
 ?>
 <div class='signup-form'>
   <h2>Sign Up</h2>
-  <form action='/includes/signup.inc.php' method='post'>
+  <form action='./includes/signup.inc.php' method='post'>
     <div class='form-element'>
       <label for='email'>Enter Email</label>
       <input type='email' name='email' id='email' placeholder='Email' required />

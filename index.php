@@ -8,6 +8,7 @@ include_once 'navbar.php';
 			<div class="d-flex justify-content-center">
 				<h5 class="card-title">Login</h5>
 			</div>
+			<form action='includes/login.inc.php' method='post'>
 			<form>
 				<div class="form-outline mb-4">
 					<input type="email" name="username" id="username" class="form-control" placeholder="Email address" required/>
@@ -47,11 +48,10 @@ include_once 'navbar.php';
 				<div class="text-center">
 					<p>Not a member? <a href="#!">Register</a></p>
 				</div>
-				</form>
+			</form>
 		</div>
 	</div>
 </div>
 <?php
 include_once 'footer.php';
 ?>
-
