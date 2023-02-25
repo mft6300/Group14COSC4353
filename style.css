@@ -2,8 +2,7 @@ div.welcome {
   color: #f6e1af;
   text-align: center;
   overflow: hidden;
-  background-color: #0b3824;
-  font-family: serif;
+  background-color: #454545;
 }
 
 a:link {
@@ -67,13 +66,11 @@ ul.footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #6aaca1;
+  background-color: #585858;
   clear: both;
   margin-top: 180px;
   height: 180px;
   font-size: 18px;
-  font-family: Arial;
-  font-style: italic;
   font-weight: bold;
 }
 
@@ -125,7 +122,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
   font-size: 16;
 }
 input {
@@ -144,7 +140,6 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
   font-size: 16;
 }
 button {
@@ -162,7 +157,7 @@ button {
   min-height: 32px;
   border: none;
   color: #fff;
-  background-color: #174032;
+  background-color: #3f3f3f;
   transition: background-color 0.17s ease, color 0.17s ease;
 }
 p.headtitle {
@@ -191,7 +186,6 @@ p.headtitle {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
-  font-family: sans-serif;
   min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
