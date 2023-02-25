@@ -228,7 +228,7 @@ table {
 .week {
   display:flex;
   }
-.colums {
+/* .colums {
   display:flex;
   justify-content:space-between;
   flex-direction:row;
@@ -236,7 +236,7 @@ table {
 }
 .colums div {
   width:48%;
-}
+} */
 .testbox {
   display: flex;
   justify-content: center;
@@ -245,14 +245,6 @@ table {
   padding: 20px;
   }
 
-.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
-  color:  #669999;
-}
-/* .item input:hover, .item select:hover, .item textarea:hover {
-  border: 1px solid transparent;
-  box-shadow: 0 0 3px 0  #669999;
-  color: #669999;
-} */
 .item {
   position: relative;
   margin: 10px 0;
@@ -272,7 +264,7 @@ table {
   display: block;
 }
 
-@media (min-width: 568px) {
+/* @media (min-width: 568px) {
   .name-item, .city-item {
   display: flex;
   flex-wrap: wrap;
@@ -288,4 +280,4 @@ table {
   display:block;
   padding-bottom:5px;
   }
-}
+} */
