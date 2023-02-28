@@ -228,15 +228,6 @@ table {
 .week {
   display:flex;
   }
-/* .colums {
-  display:flex;
-  justify-content:space-between;
-  flex-direction:row;
-  flex-wrap:wrap;
-}
-.colums div {
-  width:48%;
-} */
 .testbox {
   display: flex;
   justify-content: center;
@@ -263,21 +254,3 @@ table {
 .question-answer label {
   display: block;
 }
-
-/* @media (min-width: 568px) {
-  .name-item, .city-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  }
-  .name-item input, .name-item div {
-  width: calc(50% - 20px);
-  }
-  .name-item div input {
-  width:97%;}
-
-  .name-item div label {
-  display:block;
-  padding-bottom:5px;
-  }
-} */
