@@ -3,35 +3,36 @@ include_once 'header.php';
 ?>
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
 	<div class="card" style="width: 25rem">
-		<div class="card-body">
-			<div class="d-flex justify-content-center">
-				<h5 class="card-title">Sign Up</h5>
-			</div>
-  <form action='./includes/signup.inc.php' method='post'>
-    <div class='form-element'>
-      <label for='email'>Enter Email</label>
-      <input type='email' name='email' id='email' placeholder='Email' required />
+  <div class="card-header text-center mb-3">Sign-up</div>
+    <div class="col-lg-6 mx-auto d-flex justify-content-center">
+      <form action='./includes/signup.inc.php' method='post' class="justify-content-center">
+        <div class='form-element mb-3'>
+          <label for='email'>Enter Email</label>
+          <input type='email' name='email' id='email' placeholder='Email' required />
+        </div>
+        <div class='form-element mb-3'>
+          <label for='phonenum'>Enter Phone Number</label>
+          <input type='text' name='phonenum' id='phonenum' placeholder='Phone Number' required />
+        </div>
+        <div class='form-element mb-3'>
+          <label for='username'>Enter Username</label>
+          <input type='text' name='username' id='username' placeholder='Username' required />
+        </div>
+        <div class='form-element mb-3'>
+          <label for='password'>Enter Password</label>
+          <input type='password' name='password' id='password' placeholder='Password' required />
+        </div>
+        <div class='form-element mb-3'>
+          <label for='passwordrepeat'>Repeat Password</label>
+          <input type='password' name='passwordrepeat' id='passwordrepeat' placeholder='Password' required />
+        </div>
+        <div class='submit-btn text-center'>
+          <button type='submit' name='submit'>Sign Up</button>
+        </div>
+      </form>
     </div>
-    <div class='form-element'>
-      <label for='phonenum'>Enter Phone Number</label>
-      <input type='text' name='phonenum' id='phonenum' placeholder='Phone Number' required />
-    </div>
-    <div class='form-element'>
-      <label for='username'>Enter Username</label>
-      <input type='text' name='username' id='username' placeholder='Username' required />
-    </div>
-    <div class='form-element'>
-      <label for='password'>Enter Password</label>
-      <input type='password' name='password' id='password' placeholder='Password' required />
-    </div>
-    <div class='form-element'>
-      <label for='passwordrepeat'>Repeat Password</label>
-      <input type='password' name='passwordrepeat' id='passwordrepeat' placeholder='Password' required />
-    </div>
-    <div class='submit-btn'>
-      <button type='submit' name='submit'>Sign Up</button>
-    </div>
-  </form>
+  </div>
+</div>
   <?php
   if (isset($_GET["error"])) {
     if ($_GET["error"] === "emptyinput") {
